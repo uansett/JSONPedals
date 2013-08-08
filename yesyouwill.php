@@ -9,7 +9,7 @@ if(isset($_GET['callback']))
 }
 
 //Code from user bakkelun on Stackoverflow (http://stackoverflow.com/users/151237/bakkelun)
-public function Parse ($url) {
+function Parse($url) {
         $fileContents= file_get_contents($url);
         $fileContents = str_replace(array("\n", "\r", "\t"), '', $fileContents);
         $fileContents = trim(str_replace('"', "'", $fileContents));
